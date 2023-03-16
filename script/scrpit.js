@@ -10,20 +10,31 @@ function LeerDatos() {
     nombre = document.getElementById("nombre").value
     correo = document.getElementById("correo").value
     mensaje = document.getElementById("textarea").value
-    console.log(nombre)
-    console.log(correo)
-    console.log(mensaje)
+    ValidarData (nombre,correo,mensaje)
+    GuardarLocalStorage(nombre,correo,mensaje)
 }
 
 function ValidarData (nombre,correo,mensaje) {
-    if(nombre.length==0 || correo.length==0 || mensaje,length==0){
+    if(nombre.length==0 || correo.length==0 || mensaje.length==0){
 
-        swal.fire({
+        Swal.fire({
             title: "error!",
-            Text: "do you want to continue",
+            Text: "completa los datos para continuar",
             icon: "error",
-            confirmButtonText:"cool",
+            confirmButtonText:"ok",
             iconColor: "red",
         })
     }
+}
+function GuardarLocalStorage(nombre,correo,mensaje) {
+    localStorage.setItem('Nombre',nombre)
+    localStorage.setItem('Correo',correo)
+    localStorage.setItem('Mensaje',mensaje)
+    ListarData()
+    }
+
+function ListarData(){
+    let nombreUsu = localStorage.getItem("nombre")
+    let correoUsu = localStorage.getItem("correo")
+    let mensajeUsu = localStorage.getItem("mensaje")
 }
