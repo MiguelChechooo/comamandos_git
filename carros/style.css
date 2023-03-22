@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: url("https://images5.alphacoders.com/964/964482.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(45, 107, 35);
+    font-family: helvetica;
+    height: 100vh;
+}
+
+nav{
+    background-color: rgb(119, 136, 153,0.212);
+    width: 100%;
+}
+
+.menu{
+    list-style: none;
+    margin: 0%;
+    padding: 1%;
+    width: 100%;
+}
+
+.lista a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 15px 50px;
+}
+
+.menu .lista{
+    display: inline-block;
+}
+
+.lista-r{
+    float: right;
+}
+
+.lista a:hover{
+    background-color: rgb(255, 59, 25);
+}
+
+main{ 
+text-align: center;
+}
+
+img{margin-top: 40px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border:10px solid rgb(0, 0, 0) 
+}
+
+p{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(247, 247, 247, 0.684);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: 1;
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+    background-color: rgba(252, 250, 250, 0.251);
+}
+
+label{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(235, 240, 240);
+}
+
+#textarea{
+    border: 1;
+    font-size: 18px;
+    margin: 5px;
+    background-color: rgba(254, 254, 254, 0.251);
+    color: whitesmoke;
+}
+
+button[type="submit"]{
+    background-color: rgba(255, 0, 0, 0.687);
+    color: white;
+    padding: 10px;
+    font-family: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+ 
+input::placeholder{
+    color: rgba(255, 255, 255, 0.638);
+}
+input:focus{
+    outline: none;
+    background-color: (22,66,110,0.9);
+}
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+ 
+#div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
