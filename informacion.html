@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./carros/style.css">
-    <title>formulario</title>
+    <title>Formulario</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li class="lista"><a href="https://www.iesantaelena.edu.co/">inicio</a></li>
-                <li class="lista"><a href="informacion.html">informacion</a></li>
-                <li class="lista lista-r"><a href="/contactenos.html">contactenos</a></li>
+                <li class="lista"> <a href="./index.html">Inicio</a></li>
+                <li class="lista"> <a href="./informacion.html">Informacion</a></li>
+                <li class="lista lista-r"> <a href="">Contactenos</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
-       
-        <form action="" id="form"> 
-            <p>Registrar informacion</p>
-            <div class="container" id="cosos">
+        <form action="" id="con">
 
-                    <p>propietario del vehiculo</p>
-                    <input type="text" placeholder="propietario del vehiculo" id="pdv">
-                    <p>modelo del vehiculo</p>
-                    <input type="text" placeholder="modelo del vehiculo" id="mdv">
-                <div id="div2">
-                    <p>placa</p>
-                    <input type="text" placeholder="NN-NN-LL" id="placa">
-                    <p>tipo de vehiculo</p>
-                    <input type="text" placeholder="carro-moto" id="CM">
-                    <p>fecha de entrada</p>
-                    <input type="date" placeholder="dd/mm/aaaa" id="fecha">
-                    <p>hora de inicio</p>
-                    <input type="time" placeholder="hh:mm" id="hora">
-                    <p>cantidad de horas</p>
-                    <input type="datetime" placeholder="horas" id="1hora">
-                </div>
+
+            <label>PROPIETARIO DEL VEHICULO</label>
+            <input type="text" placeholder="propietario del vehiculo" id="pdv">
+            <label>MODELO DEL VEHICULO</label>
+            <input type="text" placeholder="modelo del vehiculo" id="mdv">
+            <div>
+                <label>PLACA
+                </label>
+                <input type="text" placeholder="NN-NN-LL" id="pl">
+                <label>TIPO DE VEHICULO</label>
+                <input type="text" placeholder="Carro Moto" id="tdv">
             </div>
+            <div id="div2">
+                <label>FECHA DE ENTRADA</label>
+                <input type="date" placeholder="dd/mm/aaaa" id="f">
+
+                <label>HORA DE INICIO</label>
+                <input type="time" placeholder="hh:mm" id="hdi">
+                <label>CANTIDAD DE HORAS</label>
+                <input type="number" placeholder="Cantidad" id="cdt">
+
+            </div>
+
+            <button type="submit" id="tin">Enviar</button>
         </form>
     </main>
+
+    <script src="./carros/cript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
